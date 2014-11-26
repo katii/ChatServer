@@ -39,5 +39,8 @@ public class ChatServer {
     
     public static void broadcastMessage(ChatMessage cm){
         
+        for(ServerClientBackEnd temp: clients){
+            temp.sendMessage(cm);
+        }
     }
 }
