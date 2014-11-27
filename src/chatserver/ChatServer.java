@@ -13,6 +13,7 @@ import message.ChatMessage;
  */
 public class ChatServer {
 
+    // toinen array list, jossa clientien nimet
     static ArrayList<ServerClientBackEnd> clients = new ArrayList();
     
     public static void main(String[] args) {
